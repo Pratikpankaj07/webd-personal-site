@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #e4f9f5;
+    width: 100%;
+}
+
+.cloud1 {
+    grid-area: 1/3/2/4;
+    align-self: flex-end;
+}
+
+.cloud2 {
+    grid-area: 2/1/3/2;
+    align-self: center;
+}
+
+.top-container .text {
+    color: #66bfbf;
+    font-size: 5rem;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.spaned {
+    color: #66bfbf;
+    font-size: 2.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    grid-area: 2/2/3/3;
+    padding: 0 20px;
+}
+
+.mountain {
+    grid-area: 3/2/4/3;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.middle-container img {
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+}
+
+.hello {
+    color: #66bfbf;
+    font-size: 4rem;
+}
+
+.welcome_text {
+    font-size: 2rem;
+    text-align: center;
+}
+
+hr {
+    border: dotted #39d3d3 8px;
+    border-bottom: none;
+    width: 4%;
+    margin: 0 auto;
+}
+
+.education {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.edu {
+    color: #66bfbf;
+    font-size: 2.8rem;
+}
+
+.clg_school {
+    font-size: 1.5rem;
+}
+
+.skills-container {
+    display: grid;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skills {
+    color: #66bfbf;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.webd, .dsa, .python, .communication {
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+}
+
+#getintouch {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #83d5d5;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+button {
+    background-color: #7df4f4;
+    font-size: 25px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bottom-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #39d3d3;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #39d3d3;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .top-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        text-align: center;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .text, .spaned {
+        font-size: 2rem;
+    }
+
+    .cloud1, .cloud2, .mountain {
+        display: none;
+    }
+
+    .hello {
+        font-size: 3rem;
+    }
+
+    .welcome_text {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text, .spaned {
+        font-size: 1.5rem;
+    }
+
+    .hello {
+        font-size: 2rem;
+    }
+
+    .welcome_text {
+        font-size: 1rem;
+    }
+
+    .skills {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        gap: 10px;
+    }
+
+    .edu {
+        font-size: 2rem;
+    }
+}
